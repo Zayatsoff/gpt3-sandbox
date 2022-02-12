@@ -1,9 +1,9 @@
 import streamlit as st
-from api.gpt import set_openai_key
 from config import api_key
 import openai
 
 API_KEY = api_key
+
 
 class web_app:
     def __init__(
@@ -20,14 +20,14 @@ class web_app:
     def run(self, gpt):
         st.title("OpenAi's text-davinci-001")
         st.write(" ### Input instructions:")
-        self.input = st.text_input(self.placeholder)
+        self.input = st.text_area(self.placeholder)
         self.button = st.button(self.btn_txt)
         try:
             if self.button:
                 st.header("**Result**")
                 answer = gpt.submit_request(self.input)
-                # print(answer)
-                st.markdown(answer['choices'][0]['text'])
+                with st.container():
+                    st.markdown(answer["choices"][0]["text"])
         except Exception as e:
             st.success(f"Something Went Wrong! {e}")
 
