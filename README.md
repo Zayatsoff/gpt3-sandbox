@@ -5,3 +5,9 @@ So far so good.
 
 <img src="https://github.com/Zayatsoff/gpt3-sandbox/blob/master/images/sc1.JPG" width="800">
 
+## How to use
+1. Create `config.py` in the root folder. 
+2. The only line you need in there is `api_key = "[KEY]"`. 
+3. Replace `[KEY]` with your OpenAi API key.
+4. Enter `streamlit run ./streamlit_main.py` into your console.
+
