@@ -26,7 +26,7 @@ class web_app:
             if self.button:
                 st.header("**Result**")
                 answer = gpt.submit_request(self.input)
-                print(answer)
+                # print(answer)
                 st.markdown(answer['choices'][0]['text'])
         except Exception as e:
             st.success(f"Something Went Wrong! {e}")
