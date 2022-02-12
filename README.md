@@ -3,3 +3,5 @@ The goal is to create a model able to answer high school discussion questions.
 
 So far so good.
 
+<img src="https://github.com/Zayatsoff/gpt3-sandbox/blob/master/images/sc1.JPG" width="500">
+
