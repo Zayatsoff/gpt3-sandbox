@@ -48,7 +48,7 @@ class GPT:
                  max_tokens=200,
                  input_prefix="input: ",
                  input_suffix="\n",
-                 output_prefix="output: ",
+                 output_prefix="\n",
                  output_suffix="\n\n",
                  append_output_prefix_to_query=False):
         self.examples = {}
