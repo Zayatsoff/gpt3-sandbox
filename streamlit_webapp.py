@@ -10,7 +10,7 @@ class web_app:
         self,
         description="Description",
         button_text="Submit",
-        placeholder="Default placeholder",
+        placeholder=" ",
     ):
         self.btn_txt = button_text
         self.placeholder = placeholder
