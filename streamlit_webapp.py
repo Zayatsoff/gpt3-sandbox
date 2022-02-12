@@ -27,8 +27,7 @@ class web_app:
                 st.header("**Result**")
                 answer = gpt.submit_request(self.input)
                 print(answer)
-                offset = len(gpt.output_prefix)
-                st.header(answer['choices'][0]['text'][offset:])
+                st.markdown(answer['choices'][0]['text'])
         except Exception as e:
             st.success(f"Something Went Wrong! {e}")
 
