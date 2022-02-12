@@ -6,7 +6,7 @@ from api import GPT, Example, UIConfig
 from api import demo_web_app
 
 
-# Construct GPT object and show some examples
+# Construct GPT object and show some examplesconda activatwee
 gpt = GPT(engine="davinci",
           temperature=0.5,
           max_tokens=100)
