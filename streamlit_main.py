@@ -1,3 +1,5 @@
+# Written by https://github.com/Zayatsoff
+
 import streamlit as st
 from streamlit_webapp import web_app
 from api import GPT

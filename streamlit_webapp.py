@@ -1,3 +1,5 @@
+# Written by https://github.com/Zayatsoff
+
 import streamlit as st
 from config import api_key
 import openai
