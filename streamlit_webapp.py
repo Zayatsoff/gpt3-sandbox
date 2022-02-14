@@ -36,3 +36,9 @@ class web_app:
     def set_openai_key(self, key):
         """Sets OpenAI key."""
         openai.api_key = key
+
+    def num_tokens(self):
+        number_tokens = st.sidebar.slider(
+            "Number of Tokens", min_value=5, max_value=2000, value=50
+        )
+        return number_tokens

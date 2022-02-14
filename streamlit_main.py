@@ -5,5 +5,7 @@ from streamlit_webapp import web_app
 from api import GPT
 
 webapp = web_app()
-gpt = GPT(engine="text-davinci-001", temperature=0.7, max_tokens=200)
+hi = webapp.num_tokens()
+gpt = GPT(engine="text-davinci-001", temperature=0.7, max_tokens=hi)
+print(hi)
 webapp.run(gpt)
